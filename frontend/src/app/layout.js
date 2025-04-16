@@ -1,8 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
 import { ToastContainer } from "react-toastify";
-import AppContextProvider from "./context/AppContext";
+
 
 
 
@@ -17,9 +16,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="">
         <ToastContainer position="buttom-right"/>
-        <AppContextProvider>
         {children}
-        </AppContextProvider>
         
       </body>
     </html>
